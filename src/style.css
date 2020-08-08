@@ -124,12 +124,17 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  display: none;
-  cursor: default;
 }
-.siteList .site:hover > .close {
-  display: block;
+@media (min-width: 500px) {
+  .siteList .site > .close {
+    cursor: default;
+    display: none;
+  }
+  .siteList .site:hover > .close {
+    display: block;
+  }
 }
+
 .siteList .addButton {
   border: 1px solid #ddd;
   width: 160px;

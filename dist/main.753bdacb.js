@@ -139,7 +139,7 @@ var simplifyUrl = function simplifyUrl(url) {
 var render = function render() {
   $siteList.find("li:not(.last)").remove();
   hashMap.forEach(function (node, index) {
-    var $li = $("<li>\n              <div class=\"site\">\n                  <div class=\"logo\">".concat(node.logo[0], "</div>\n                  <div class=\"link\">").concat(simplifyUrl(node.url), "</div>\n                  <div class=\"close\">\n                    <svg class=\"icon\" aria-hidden=\"true\">\n                      <use xlink:href=\"#icon-close\"></use>\n                    </svg>\n                  </div>\n              </div>\n          </li>")).insertBefore($lastLi);
+    var $li = $("<li>\n              <div class=\"site\">\n                  <div class=\"logo\">".concat(node.logo[0], "</div>\n                  <div class=\"link\">").concat(simplifyUrl(node.url), "</div>\n                  <div class=\"close\">\n                    <svg class=\"icon\" \">\n                      <use xlink:href=\"#icon-close\"></use>\n                    </svg>\n                  </div>\n              </div>\n          </li>")).insertBefore($lastLi);
     $li.on("click", function () {
       window.open(node.url);
     });
@@ -184,4 +184,4 @@ $(document).on("keypress", function (e) {
   }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.0f363e30.js.map
+//# sourceMappingURL=main.753bdacb.js.map
